@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <title>Diff-Checker</title>
+  <link rel="stylesheet" href="partials/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="partials/css/bootstrap.min.css">
+  <link rel="stylesheet" href="partials/css/bootstrap-treeview.min.css">
+  <script type="text/javascript" src="partials/js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="partials/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="partials/js/knockout-3.3.0.js"></script>
+  <script type="text/javascript" src="partials/js/bootstrap-treeview.min.js"></script>
+  <script type="text/javascript" src="app/app.js"></script>
+</head>
+
+<body>
+  <div class="col-md-offset-1 col-md-5">
+    <input type="text" data-bind="value:url1">
+  </div>
+  <div class="col-md-5">
+    <input type="text" data-bind="value:url2">
+  </div>
+  <div class="col-md-1">
+    <button type="button" data-bind="click:sendUrl" name="button">Comparer</button>
+  </div>
+  <div class="col-md-offset-1 col-md-5" id="tree1"></div>
+  <div class="col-md-5" id="tree2"></div>
+</body>
+
+</html>
